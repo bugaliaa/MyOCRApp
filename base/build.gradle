@@ -1,0 +1,12 @@
+apply from: "${rootProject.projectDir}/commons.gradle"
+
+dependencies {
+    implementation project(':core')
+
+    implementation deps.androidx.design
+    implementation deps.androidx.ktxCore
+
+    implementation deps.glide.core
+    implementation deps.glide.okhttp3Integration
+    kapt deps.glide.compiler
+}
